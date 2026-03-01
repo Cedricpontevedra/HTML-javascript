@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vibe Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>🎨 Vibe Color Picker</h1>
+        <p class="subtitle">Set your mood. Feel the vibe.</p>
+
+        <div class="controls">
+            <input type="color" id="colorPicker">
+            <button onclick="setRandomVibe()">Random Vibe</button>
+            <button onclick="toggleGradient()">Toggle Gradient</button>
+            <button onclick="copyColor()">Copy Color</button>
+        </div>
+
+        <div class="preview-card" id="previewCard">
+            <h2 id="moodText">Mood: Calm</h2>
+            <p id="colorCode">#FFFFFF</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
